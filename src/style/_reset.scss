@@ -27,14 +27,3 @@ main {
   gap: 5em;
   grid-template-columns: 1fr 1fr;
 }
-
-.chart {
-  display: flex;
-  gap: 3rem 2rem;
-  flex-wrap: wrap;
-
-  div {
-    width: 30rem;
-    height: 30rem;
-  }
-}

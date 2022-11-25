@@ -1,0 +1,10 @@
+.visual {
+  display: flex;
+  gap: 3rem 2rem;
+  flex-wrap: wrap;
+
+  div {
+    width: 30rem;
+    height: 30rem;
+  }
+}
