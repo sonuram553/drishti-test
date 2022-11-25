@@ -24,7 +24,7 @@ const stations = [
 ];
 
 const dishes = [
-  "fires",
+  "fries",
   "eggs",
   "lasagna",
   "pizza",
@@ -98,6 +98,38 @@ const data = [
     duration: 1668.488,
     startTime: "2022-11-25T15:15:18.642Z",
     action: "toss",
+  },
+  {
+    id: 9,
+    dish: "fries",
+    station: "deepfrier",
+    duration: 1668.488,
+    startTime: "2022-11-25T15:15:18.642Z",
+    action: "fry",
+  },
+  {
+    id: 10,
+    dish: "eggs",
+    station: "boiler1",
+    duration: 1668.488,
+    startTime: "2022-11-25T15:15:18.642Z",
+    action: "boil",
+  },
+  {
+    id: 11,
+    dish: "fries",
+    station: "deepfrier",
+    duration: 1668.488,
+    startTime: "2022-11-25T15:15:18.642Z",
+    action: "fry",
+  },
+  {
+    id: 12,
+    dish: "eggs",
+    station: "boiler1",
+    duration: 1668.488,
+    startTime: "2022-11-25T15:15:18.642Z",
+    action: "boil",
   },
 ];
 
