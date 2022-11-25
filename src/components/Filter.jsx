@@ -1,8 +1,14 @@
-const Filter = ({ type, values }) => {
+const Filter = ({ type, values, selected, onChange }) => {
   return (
     <div className="filter">
-      <label for={type}>{type}</label>
-      <select id={type}>
+      <label htmlFor={type}>{type}</label>
+      <select
+        id={type}
+        value={selected}
+        onChange={(e) => {
+          onChange(type, e.target.value);
+        }}
+      >
         <option value="any">Any</option>
         {values.map((item) => (
           <option key={item} value={item}>

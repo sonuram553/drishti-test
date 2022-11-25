@@ -1,10 +1,9 @@
-import { actionListData } from "../data";
 import ActionCard from "./ActionCard";
 
-const ActionList = () => {
+const ActionList = ({ items }) => {
   return (
     <section className="action-list">
-      {actionListData.map((action) => (
+      {items.map((action) => (
         <ActionCard key={action.id} action={action} />
       ))}
     </section>

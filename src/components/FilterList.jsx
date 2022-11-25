@@ -1,12 +1,11 @@
-import { actions, dishes, stations } from "../data";
 import Filter from "./Filter";
 
-const FilterList = () => {
+const FilterList = ({ items, onChange }) => {
   return (
     <div className="filter-list">
-      <Filter type={"action"} values={actions} />
-      <Filter type={"dish"} values={dishes} />
-      <Filter type={"station"} values={stations} />
+      {items.map((item) => (
+        <Filter key={item.type} {...item} onChange={onChange} />
+      ))}
     </div>
   );
 };
