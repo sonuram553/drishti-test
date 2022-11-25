@@ -1,3 +1,39 @@
+const actions = [
+  "grill",
+  "toss",
+  "prep",
+  "bake",
+  "dress",
+  "presentation",
+  "boil",
+  "fry",
+];
+
+const stations = [
+  "dispatch1",
+  "dispatch2",
+  "saladbay1",
+  "saladbay2",
+  "deepfrier",
+  "boiler1",
+  "oven1",
+  "oven2",
+  "prep1",
+  "prep2",
+  "grill1",
+];
+
+const dishes = [
+  "fires",
+  "eggs",
+  "lasagna",
+  "pizza",
+  "burger",
+  "cake",
+  "egg",
+  "salad",
+];
+
 const data = [
   {
     id: 1,
@@ -65,4 +101,4 @@ const data = [
   },
 ];
 
-export default data;
+export { actions, stations, dishes, data as actionListData };
