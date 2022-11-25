@@ -1,5 +1,3 @@
-import ActionCard from "./ActionCard";
-
 const data = [
   {
     dish: "LASAGNA",
@@ -31,12 +29,4 @@ const data = [
   },
 ];
 
-function App() {
-  return (
-    <div className="App">
-      <ActionCard />
-    </div>
-  );
-}
-
-export default App;
+export default data;
