@@ -4,8 +4,8 @@ import ActionCard from "./ActionCard";
 const ActionList = () => {
   return (
     <section className="action-list">
-      {data.map((action, index) => (
-        <ActionCard key={index} />
+      {data.map((action) => (
+        <ActionCard key={action.id} action={action} />
       ))}
     </section>
   );

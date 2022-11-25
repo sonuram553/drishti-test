@@ -1,12 +1,13 @@
 .action-card {
   display: grid;
-  gap: 0 1em;
+  gap: 3px 1em;
+  align-items: center;
   grid-template-columns: min-content 1fr;
   grid-template-rows: repeat(3, 1fr);
 
   &__thumbnail {
-    width: 5.5em;
-    height: 5.5em;
+    width: 5em;
+    height: 5em;
     border-radius: 50%;
     border: 1px solid;
     grid-row: 1 / -1;

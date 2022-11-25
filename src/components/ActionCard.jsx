@@ -1,14 +1,14 @@
-const ActionCard = () => {
+const ActionCard = ({ action }) => {
   return (
     <article className="action-card">
       <div className="action-card__thumbnail"></div>
-      <h2>Bake</h2>
+      <h2>{action.action.toUpperCase()}</h2>
       <div className="action-card__dish">
-        <p>LASAGNA</p> <p>OVEN1</p>
+        <p>{action.dish.toUpperCase()}</p> <p>{action.station.toUpperCase()}</p>
       </div>
       <div className="action-card__time">
-        <p>duration</p>
-        <p>start time</p>
+        <p>{action.duration}</p>
+        <p>{action.startTime}</p>
       </div>
     </article>
   );
