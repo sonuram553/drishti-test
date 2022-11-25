@@ -23,7 +23,7 @@ const Visual = ({ actionListData }) => {
       labels,
       datasets: [
         {
-          label: "My First Dataset",
+          label: "Count",
           data,
           backgroundColor: data.map(
             () =>
