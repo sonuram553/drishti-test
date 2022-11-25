@@ -14,6 +14,27 @@ function App() {
     setFiltersApplied((filter) => ({ ...filter, [type]: selected }));
   };
 
+  const filteredData = () => {
+    return actionListData.filter((data) => {
+      if (
+        filtersApplied.action !== "any" &&
+        filtersApplied.action !== data.action
+      )
+        return false;
+
+      if (filtersApplied.dish !== "any" && filtersApplied.dish !== data.dish)
+        return false;
+
+      if (
+        filtersApplied.station !== "any" &&
+        filtersApplied.station !== data.station
+      )
+        return false;
+
+      return true;
+    });
+  };
+
   return (
     <section>
       <FilterList
@@ -28,7 +49,7 @@ function App() {
           },
         ]}
       />
-      <ActionList items={actionListData} />
+      <ActionList items={filteredData()} />
     </section>
   );
 }
