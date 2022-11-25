@@ -1,11 +1,10 @@
-import { actions } from "../data";
 import ActionList from "./ActionList";
-import Filter from "./Filter";
+import FilterList from "./FilterList";
 
 function App() {
   return (
     <section>
-      <Filter type={"action"} values={actions} />
+      <FilterList />
       <ActionList />
     </section>
   );
