@@ -68,7 +68,10 @@ function App() {
 
   return (
     <main>
-      <Visual />
+      {/* Visual representation with Doughnut Charts */}
+      <Visual actionListData={filteredData} />
+
+      {/* List of Actions */}
       <section>
         <FilterList
           onChange={onUpdateFilter}
