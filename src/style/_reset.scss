@@ -19,4 +19,11 @@ p {
 
 body {
   padding: 4em;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  gap: 5em;
+  grid-template-columns: 1fr 1fr;
 }

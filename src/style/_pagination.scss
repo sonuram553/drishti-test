@@ -1,0 +1,16 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4em;
+  font-size: 1.2rem;
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+  }
+
+  &__btn--disabled {
+    color: rgba($color: #000000, $alpha: 0.3);
+  }
+}
